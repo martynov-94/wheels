@@ -1,3 +1,9 @@
 include build/project.pug
-	
-+page(data)
+
+-
+  let page_title = "Wheels";
+  let data = {
+    company_name: "Wheels"
+  };
+
++page(page_title, data)
