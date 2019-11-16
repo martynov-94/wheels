@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url($FONTS-PATH + 'Raleway/ralewayregular.ttf');
+  src:
+    url($FONTS-PATH + 'Raleway/ralewayregular.woff2') format('woff2'),
+    url($FONTS-PATH + 'Raleway/ralewayregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

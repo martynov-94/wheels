@@ -1,5 +1,21 @@
 - 
-  let title = "Welcome to Wheels";
-  let description = "Your free psd template, perfect for your next big idea";
-  let signature = "by Pawel Betkowski";
-  let bg_image_path = "img/bg-image.png";
+  relative_path = "components/header/";
+  menu_btn_txt = "Menu";
+  bg_image_path = relative_path + "img/bg-image.png";
+  title = "Welcome to Wheels";
+  description = "Your free psd template, perfect for your next big idea";
+  signature = "by Pawel Betkowski";
+  mouse_icon_path = relative_path + "img/mouse-icon.png";
+  
+
+mixin header()
+  .header__menu
+    h2.header__company-name.company-name
+      +company-name()
+    button.header__menu-btn= menu_btn_txt
+  .header__title
+    h1.header__welcome= title
+    p.header__description= description
+    span.header__signature= signature
+  img.header__mouse-icon(src=mouse_icon_path width="45" height="67")
+  block

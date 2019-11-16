@@ -1,10 +1,17 @@
-mixin wrapper(data)
+mixin wrapper()
   header.header
-    .header__menu
-      .header__company-name.company-name
-      button.header__menu-btn
-    .header__title
-      h1.header__welcome
-      p.header__description
-      p.header__signature
-    .header__mouse-icon
+    +header()
+  nav.nav
+    +nav()
+  .about
+    +about()
+  .stats
+    +stats()
+  .products
+    +products()
+  .team  
+    +team()
+  .showcase  
+    +showcase()
+  footer.footer
+    +footer()

@@ -1,4 +1,4 @@
-mixin page(page_title, data)
+mixin page(page_title)
   doctype html
   html(lang="ru")
     head
@@ -8,4 +8,4 @@ mixin page(page_title, data)
       link(rel='stylesheet', href='styles/project.css')
     body
       .wrapper
-        +wrapper(data)
+        +wrapper()

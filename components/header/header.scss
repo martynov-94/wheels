@@ -1,0 +1,31 @@
+$relative_path: "../components/header/";
+
+.header {
+    min-height: 1080px;
+    padding: 117px 10% 0;
+
+    font-family: "Raleway", sans-serif;
+    color: #ededed;
+
+    background: #000000 url($relative_path + "img/bg-image.png") no-repeat center;
+    background-size: cover;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 1.875rem;
+        font-weight: bold;
+
+        text-transform: uppercase;
+    }
+
+    &__title {
+
+    }
+
+    &__mouse-icon {
+
+    }
+}
