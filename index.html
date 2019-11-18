@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheels</title>
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -12,12 +15,13 @@
         <div class="header__menu">
           <h2 class="header__company-name company-name">Wheels
           </h2>
-          <button class="header__menu-btn">Menu</button>
+          <button class="header__menu-btn">Menu <i class="fas fa-bars"></i></button>
         </div>
         <div class="header__title">
           <h1 class="header__welcome">Welcome to Wheels</h1>
-          <p class="header__description">Your free psd template, perfect for your next big idea</p><span class="header__signature">by Pawel Betkowski</span>
-        </div><img class="header__mouse-icon" src="components/header/img/mouse-icon.png" width="45" height="67"/>
+          <p class="header__description">Your free psd template, perfect for your next big idea</p><span class="header__signature">by Pawel Betkowski</span><img class="header__mouse-icon" src="components/header/img/mouse-icon.png" width="45" height="67"/>
+          <script>$('.header__menu-btn').click(() => alert(1));</script>
+        </div>
       </header>
       <nav class="nav">
       </nav>

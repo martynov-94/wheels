@@ -9,13 +9,17 @@
   
 
 mixin header()
+  //- .test(class="<test-class>")
   .header__menu
     h2.header__company-name.company-name
       +company-name()
-    button.header__menu-btn= menu_btn_txt
+    button.header__menu-btn= menu_btn_txt + ' '
+      i.fas.fa-bars
   .header__title
     h1.header__welcome= title
     p.header__description= description
     span.header__signature= signature
-  img.header__mouse-icon(src=mouse_icon_path width="45" height="67")
+    img.header__mouse-icon(src=mouse_icon_path width="45" height="67")
+    script
+      include header.js
   block

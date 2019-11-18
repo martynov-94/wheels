@@ -1,0 +1,1 @@
+$('.header__menu-btn').click(() => alert(1));

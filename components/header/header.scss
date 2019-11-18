@@ -1,28 +1,50 @@
 $relative_path: "../components/header/";
 
 .header {
-    min-height: 1080px;
-    padding: 117px 10% 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10.7vh 10% 0;
+
 
     font-family: "Raleway", sans-serif;
     color: #ededed;
 
-    background: #000000 url($relative_path + "img/bg-image.png") no-repeat center;
+    background: #0b0b0b url($relative_path + "img/bg-image.png") no-repeat center;
     background-size: cover;
 
     &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+    }
 
-        font-size: 1.875rem;
+    &__menu-btn {
+        position: relative;
+
+        color: #ededed;
+        font-family: "Raleway", sans-serif;
+        
+        background: transparent;
+        
+        font-size: 1.5rem;
         font-weight: bold;
 
+        letter-spacing: 0.3125rem;
         text-transform: uppercase;
+        border: none;
     }
 
     &__title {
 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border: 1px solid yellow;
+    }
+
+    &__welcome {
+        // margin-top: calc(50% - 1em);
     }
 
     &__mouse-icon {
