@@ -3,7 +3,7 @@
   menu_btn_txt = "Menu";
   bg_image_path = relative_path + "img/bg-image.png";
   title = "Welcome to Wheels";
-  description = "Your free psd template, perfect for your next big idea";
+  description = "Your free psd template,<br> perfect for your next big idea";
   signature = "by Pawel Betkowski";
   mouse_icon_path = relative_path + "img/mouse-icon.png";
   
@@ -17,9 +17,9 @@ mixin header()
       i.fas.fa-bars
   .header__title
     h1.header__welcome= title
-    p.header__description= description
-    span.header__signature= signature
-    img.header__mouse-icon(src=mouse_icon_path width="45" height="67")
-    script
-      include header.js
+    p.header__description!= description
+      span.header__signature= signature
+  img.header__mouse-icon(src=mouse_icon_path width="45" height="67")
+  script
+    include header.js
   block

@@ -1,10 +1,12 @@
 $relative_path: "../components/header/";
 
 .header {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
     height: 100vh;
     padding: 10.7vh 10% 0;
-
+    padding-top: 10.7vh;
 
     font-family: "Raleway", sans-serif;
     color: #ededed;
@@ -12,11 +14,12 @@ $relative_path: "../components/header/";
     background: #0b0b0b url($relative_path + "img/bg-image.png") no-repeat center;
     background-size: cover;
 
+    overflow: hidden;
+
     &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
 
     &__menu-btn {
@@ -36,18 +39,46 @@ $relative_path: "../components/header/";
     }
 
     &__title {
+        flex: 1;
+        align-items: flex-end;
 
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        border: 1px solid yellow;
+        margin-top: -10.7vh;
+
+        transform: translateY(50%);
     }
 
     &__welcome {
-        // margin-top: calc(50% - 1em);
+        font-family: "Raleway Bold", sans-serif;
+        font-size: 3rem;
+        line-height: 1.328;
+        font-weight: 800;
+
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+
+        text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        line-height: 1.66;
+
+        letter-spacing: 0.125em;
+        text-align: right;
+    }
+
+    &__signature {
+        display: block;
+
+        font-size: 1.125rem;
+        font-style: italic;
     }
 
     &__mouse-icon {
-
+        align-self: center;
+        // margin-top: auto;
+        margin-bottom: 8vh;
     }
 }

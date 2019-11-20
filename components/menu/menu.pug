@@ -9,7 +9,6 @@
   ]
 
 mixin menu()
-  ul
-    each item in items
-      li= item
+  each item in items
+    li.menu__item= item
   block

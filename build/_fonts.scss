@@ -7,3 +7,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url($FONTS-PATH + 'Raleway/ralewaybold.ttf');
+  src:
+    url($FONTS-PATH + 'Raleway/ralewaybold.woff2') format('woff2'),
+    url($FONTS-PATH + 'Raleway/ralewaybold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    border: 1px solid red;
+
+    &__item {
+        font-family: "Railway", sans-serif;
+        font-size: 1.125rem;
+        color: #3b3b3b;
+
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-right: 3vw;
+    }
+}
