@@ -1,2 +1,22 @@
+-
+  var statsTitle = "Some statistics";
+  var statsSubtitle = "Showing what your company already acomplished is always a good selling point.";
+  var statsData = [{
+    number: 409,
+    meaning: "bikes sold" 
+  }, {
+    number: 2012,
+    meaning: "year the company started"
+  }, {
+    number: 0,
+    meaning: "unsatisfied customers"
+  }];
+
 mixin stats()
+  h2.stats__title.title.title_color_white
+    +title(statsTitle)
+  h3.stats__subtitle.subtitle.subtitle_color_white
+    +subtitle(statsSubtitle)
+  ul.stats__data.stats-data
+    +stats-data(statsData)
   block

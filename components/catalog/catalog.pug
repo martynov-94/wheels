@@ -1,0 +1,5 @@
+mixin catalog(data)
+    each item in data
+        li.catalog__item.catalog-item
+            +catalog-item(item)
+    block

@@ -12,6 +12,56 @@
   font-weight: normal;
   font-style: normal; }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .about__title {
+    margin-top: 1.73em;
+    margin-bottom: 0.33em; }
+  .about__subtitle {
+    margin-bottom: 1em; }
+  .about__description {
+    margin: 1.3em 15% 5em;
+    font-size: 0.875rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #3b3b3b;
+    letter-spacing: 0.143em; }
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .catalog-item__dollar-sign {
+    padding-bottom: 10px; }
+
 .company-name {
   font-size: 1.875rem;
   font-family: "Raleway Bold", sans-serif;
@@ -103,8 +153,7 @@
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  border: 1px solid red; }
+  display: flex; }
   .menu__item {
     font-family: "Railway", sans-serif;
     font-size: 1.125rem;
@@ -124,7 +173,11 @@
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  padding: 40px 10%; }
+  padding: 40px 10%;
+  -webkit-box-shadow: 0 -15px 30px 0 black;
+  box-shadow: 0 -15px 30px 0 black; }
+  .nav__company-name {
+    margin-right: 10vw; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -139,3 +192,88 @@ html {
 body {
   margin: 0;
   padding: 0; }
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15vw; }
+  .products__title {
+    margin-top: 1.66em;
+    margin-bottom: 0.33em; }
+  .products__subtitle {
+    margin-bottom: 2em; }
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url("../components/stats/img/stats-bg.png") no-repeat center;
+  background-size: cover; }
+  .stats__title {
+    margin-top: 3em;
+    margin-bottom: 0.33em; }
+  .stats__data {
+    margin-top: 5rem;
+    margin-bottom: 6rem; }
+
+.stats-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.stats-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 15vw;
+  font-family: "Raleway", sans-serif;
+  color: #ededed;
+  text-align: center; }
+  .stats-item__number {
+    font-size: 4.5rem;
+    letter-spacing: 0.125em; }
+  .stats-item__unit {
+    font-size: 1.5rem; }
+  .stats-item:not(:last-of-type) {
+    margin-right: 7.5vw; }
+
+.subtitle {
+  font-size: 1.125rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #3b3b3b;
+  letter-spacing: 0.11em; }
+  .subtitle_color_white {
+    color: #ededed; }
+
+.title {
+  font-size: 1.875rem;
+  font-family: "Raleway Bold", sans-serif;
+  font-weight: bold;
+  color: #1d1d1d;
+  letter-spacing: 0.133em;
+  text-transform: uppercase; }
+  .title_color_white {
+    color: #ededed; }

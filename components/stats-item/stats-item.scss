@@ -1,0 +1,25 @@
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+
+    font-family: "Raleway", sans-serif;
+    color: #ededed;
+
+    text-align: center;
+
+    &__number {
+        font-size: 4.5rem;
+
+        letter-spacing: 0.125em;
+    }
+
+    &__unit {
+        font-size: 1.5rem;
+    }
+
+    &:not(:last-of-type) {
+        margin-right: 7.5vw;
+    }
+}

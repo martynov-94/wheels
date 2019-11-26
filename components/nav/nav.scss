@@ -4,7 +4,9 @@
     align-items: baseline;
     padding: 40px 10%;
 
+    box-shadow: 0 -15px 30px 0 black;
+
     &__company-name {
-        // align-self: baseline;
+        margin-right: 10vw;
     }
 }

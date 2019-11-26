@@ -1,0 +1,8 @@
+mixin catalog-item(data)
+    img.catalog-item__photo(src=data.imgPath width="398" height="299")
+    span.catalog-item__name= data.name
+    span.catalog-item__price
+        span.catalog-item__dollar-sign= "$"
+        = data.price
+    a.catalog-item__info-link(href="#")= "Learn more"
+    block

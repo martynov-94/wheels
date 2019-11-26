@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-top: 1.73em;
+        margin-bottom: 0.33em;
+    }
+
+    &__subtitle {
+        margin-bottom: 1em;
+    }
+
+    &__description {
+        margin: 1.3em 15% 5em;
+
+        font-size: 0.875rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: #3b3b3b;
+        
+        letter-spacing: 0.143em;
+    }
+}

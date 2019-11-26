@@ -1,2 +1,38 @@
+-
+  var productsTitle = "Featured products";
+  var productsSubtitle = "Your chance to shine";
+  var catalogPath = "components/catalog/img/";
+  var catalogData = [{
+    imgPath: catalogPath + "bike-orange.png",
+    name: "Orangez",
+    price: 399
+  },{
+    imgPath: catalogPath + "bike-green.png",
+    name: "Green Devil",
+    price: 399
+  },{
+    imgPath: catalogPath + "bike-blue.png",
+    name: "Blue Lagoon",
+    price: 399
+  },{
+    imgPath: catalogPath + "bike-pink.png",
+    name: "Pink Lady",
+    price: 399
+  },{
+    imgPath: catalogPath + "bike-purple.png",
+    name: "Purple Rain",
+    price: 399
+  },{
+    imgPath: catalogPath + "bike-grey.png",
+    name: "The Mist",
+    price: 399
+  }];
+
 mixin products()
+  h2.products__title.title
+    +title(productsTitle)
+  h3.products__subtitle.subtitle
+    +subtitle(productsSubtitle)
+  ul.products__catalog.catalog
+    +catalog(catalogData)
   block

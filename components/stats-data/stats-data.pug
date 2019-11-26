@@ -1,0 +1,5 @@
+mixin stats-data(statsData)
+    each item in statsData
+        li.stats-data__item.stats-item
+            +stats-item(item)
+    block

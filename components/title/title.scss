@@ -1,0 +1,13 @@
+.title {
+    font-size: 1.875rem;
+    font-family: "Raleway Bold", sans-serif;
+    font-weight: bold;
+    color: #1d1d1d;
+
+    letter-spacing: 0.133em;
+    text-transform: uppercase;
+
+    &_color_white {
+        color: #ededed;
+    }
+}

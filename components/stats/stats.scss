@@ -1,0 +1,20 @@
+$relative_path: "../components/stats/";
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: url($relative_path + "img/stats-bg.png") no-repeat center;
+    background-size: cover;
+
+    &__title {
+        margin-top: 3em;
+        margin-bottom: 0.33em;
+    } 
+
+    &__data {
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+    }
+}
