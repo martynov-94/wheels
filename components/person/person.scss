@@ -1,0 +1,28 @@
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+
+    text-transform: uppercase;
+
+    &__name {
+        margin-top: 1.1em;
+
+        font-size: 1.875rem;
+
+        letter-spacing: 0.13em;
+    }
+
+    &__position {
+        margin-top: 1em;
+        margin-bottom: 3em;
+
+        font-size: 1.125rem;
+        
+        letter-spacing: 0.11em;
+    }
+}

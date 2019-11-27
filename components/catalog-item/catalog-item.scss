@@ -3,7 +3,31 @@
     flex-direction: column;
     align-items: center;
 
-    &__dollar-sign {
-        padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #3b3b3b;
+    
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+
+    &__name {
+        margin-bottom: 0.5em;
     }
+
+    &__price {
+        margin-bottom: 0.83em;
+    }
+
+    &__info-link {
+        margin-bottom: 1.11em;
+
+        font-size: 1.125rem;
+        font-family: "Raleway", sans-serif;
+        color: #3b3b3b;
+
+        letter-spacing: 0.11em;
+        text-transform: initial;
+    }
+    
 }

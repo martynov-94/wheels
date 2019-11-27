@@ -1,2 +1,26 @@
+-
+  var teamTitle = "Meet the team";
+  var teamSubtitle = "People who make the magic happen";
+  var teamRelativePath = "components/team/img/";
+  var teamWorkers = [{
+    name: "Ian",
+    position: "Founder, CEO",
+    imgPath: teamRelativePath + "ian.png"
+  },{
+    name: "Sarah",
+    position: "Designer",
+    imgPath: teamRelativePath + "sarah.png"
+  },{
+    name: "Juan",
+    position: "Office Wizard",
+    imgPath: teamRelativePath + "juan.png"
+  }];
+
 mixin team()
+  h2.team__title.title.title_color_dark-grey
+    +title(teamTitle)
+  h3.team__subtitle.subtitle.subtitle_color_dark-grey
+    +subtitle(teamSubtitle)
+  ul.team__workers-list.workers-list
+    +workers-list(teamWorkers)
   block

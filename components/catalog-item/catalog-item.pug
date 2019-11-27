@@ -3,6 +3,6 @@ mixin catalog-item(data)
     span.catalog-item__name= data.name
     span.catalog-item__price
         span.catalog-item__dollar-sign= "$"
-        = data.price
+        span.catalog-item__value= data.price
     a.catalog-item__info-link(href="#")= "Learn more"
     block

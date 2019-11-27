@@ -46,7 +46,8 @@
   flex-flow: row wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 4rem; }
 
 .catalog-item {
   display: -webkit-box;
@@ -58,9 +59,24 @@
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-  .catalog-item__dollar-sign {
-    padding-bottom: 10px; }
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #3b3b3b;
+  letter-spacing: 0.125em;
+  text-transform: uppercase; }
+  .catalog-item__name {
+    margin-bottom: 0.5em; }
+  .catalog-item__price {
+    margin-bottom: 0.83em; }
+  .catalog-item__info-link {
+    margin-bottom: 1.11em;
+    font-size: 1.125rem;
+    font-family: "Raleway", sans-serif;
+    color: #3b3b3b;
+    letter-spacing: 0.11em;
+    text-transform: initial; }
 
 .company-name {
   font-size: 1.875rem;
@@ -193,6 +209,31 @@ body {
   margin: 0;
   padding: 0; }
 
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-transform: uppercase; }
+  .person__name {
+    margin-top: 1.1em;
+    font-size: 1.875rem;
+    letter-spacing: 0.13em; }
+  .person__position {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.125rem;
+    letter-spacing: 0.11em; }
+
 .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,6 +308,27 @@ body {
   letter-spacing: 0.11em; }
   .subtitle_color_white {
     color: #ededed; }
+  .subtitle_color_dark-grey {
+    color: #1e1e1e; }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15vw;
+  background-color: #ededed; }
+  .team__title {
+    margin-top: 1.5em; }
+  .team__subtitle {
+    margin-top: 0.8em;
+    margin-bottom: 3em; }
 
 .title {
   font-size: 1.875rem;
@@ -277,3 +339,17 @@ body {
   text-transform: uppercase; }
   .title_color_white {
     color: #ededed; }
+  .title_color_dark-grey {
+    color: #1e1e1e; }
+
+.workers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%; }

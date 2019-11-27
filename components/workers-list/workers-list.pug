@@ -1,0 +1,5 @@
+mixin workers-list(workers)
+    each worker in workers
+        li.workers-list__person.person
+            +person(worker)
+    block
