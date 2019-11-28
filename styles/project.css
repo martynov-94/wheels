@@ -89,6 +89,9 @@
   .company-name_color_black {
     color: #1c1c1c; }
 
+.footer {
+  background-color: #1e1e1e; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +254,36 @@ body {
     margin-bottom: 0.33em; }
   .products__subtitle {
     margin-bottom: 2em; }
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10vw; }
+  .showcase__title {
+    margin-top: 2.2em; }
+  .showcase__subtitle {
+    margin-top: 1em;
+    margin-bottom: 3em; }
+  .showcase__photo {
+    width: 25%; }
+  .showcase__follow-widget {
+    margin-top: 2.5em;
+    margin-bottom: 2.4em;
+    font-family: "Railway", sans-serif;
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    letter-spacing: 0.125em;
+    text-transform: uppercase; }
+  .showcase__follow-link {
+    color: #1e1e1e; }
 
 .stats {
   display: -webkit-box;

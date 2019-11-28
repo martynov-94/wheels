@@ -1,2 +1,36 @@
+- 
+  var footerFirstMenuTitle = "Quick Links";
+  var footerFirstMenuLinks = [
+    "About Us",
+    "Products",
+    "Services",
+    "Our Team",
+    "Blog",
+    "Contact"
+  ];
+  var footerSecondMenuTitle = "Quick Links 2";
+  var footerSecondMenuLinks = [
+    "FAQ",
+    "Terms & Conditions",
+    "Something Else",
+    "Anything",
+    "Your Ideas",
+    "Right Here"
+  ];
+  var footerSocialLinksTitle = "Let's Get Social!";
+  var footerPicsRelativePath = "components/footer/img/";
+  var footerSocialPicsPaths = [
+    footerPicsRelativePath + "facebook.png",
+    footerPicsRelativePath + "linked-in.png",
+    footerPicsRelativePath + "instagram.png",
+    footerPicsRelativePath + "twitter.png"
+  ];
+
 mixin footer()
+  h2.footer__company-name.company-name
+    +company-name()
+  ul.footer__info-block.links-list(footerFirstMenuTitle, footerFirstMenuLinks)
+  ul.footer__info-block.links-list(footerSecondMenuTitle, footerSecondMenuLinks)
+  ul.footer__info-block.links-list_type_social(footerSocialLinksTitle, footerSocialPicsPaths)
+  img.footer__map(src="")
   block

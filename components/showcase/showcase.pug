@@ -1,2 +1,23 @@
+-
+  var showcaseTitle = "#Social Showcase";
+  var showcaseSubtitle = "Show your customers why your Instagram account is the one they should follow";
+  var showcaseRelativePath = "components/showcase/img/";
+  var showcasePhotosPaths = [
+    "photo-1-forest.png",
+    "photo-2-pink.png",
+    "photo-3-legs.png",
+    "photo-4-yellow.png"
+  ];
+
 mixin showcase()
+  h2.showcase__title.title.title_color_dark-grey
+    +title(showcaseTitle)
+  h3.showcase__subtitle.subtitle.subtitle_color_dark-grey
+    +subtitle(showcaseSubtitle)
+  .showcase__photos-block
+    each photo in showcasePhotosPaths
+      img.showcase__photo(src=showcaseRelativePath + photo)
+  .showcase__follow-widget= "Follow " 
+    a.showcase__follow-link(href="#")= "@Wheels"
+    = " on Instagram"
   block
