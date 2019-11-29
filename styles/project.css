@@ -90,7 +90,32 @@
     color: #1c1c1c; }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15vw;
   background-color: #1e1e1e; }
+  .footer__company-name {
+    margin-top: 1.8em;
+    margin-bottom: 4.8em; }
+  .footer__menus {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footer__map {
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 .header {
   display: -webkit-box;
@@ -168,6 +193,36 @@
     -ms-grid-row-align: center;
     align-self: center;
     margin-bottom: 8vh; }
+
+.links-list {
+  font-size: 1.125rem;
+  font-family: "Raleway", sans-serif;
+  color: #ededed;
+  text-transform: uppercase;
+  letter-spacing: 0.11em; }
+  .links-list:not(:last-of-type) {
+    margin-right: 5vw; }
+  .links-list_type_social .links-list__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .links-list_type_social .links-list__item:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: 1vw; }
+  .links-list__title {
+    margin-bottom: 1.60em;
+    font-weight: bold; }
+  .links-list__item {
+    font-weight: normal; }
+  .links-list__item:not(:last-of-type) {
+    margin-bottom: 0.9em; }
 
 .menu {
   display: -webkit-box;

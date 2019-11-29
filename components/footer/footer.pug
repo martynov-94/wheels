@@ -20,17 +20,21 @@
   var footerSocialLinksTitle = "Let's Get Social!";
   var footerPicsRelativePath = "components/footer/img/";
   var footerSocialPicsPaths = [
-    footerPicsRelativePath + "facebook.png",
-    footerPicsRelativePath + "linked-in.png",
-    footerPicsRelativePath + "instagram.png",
-    footerPicsRelativePath + "twitter.png"
+    "<img src=" + footerPicsRelativePath + "facebook.png>",
+    "<img src=" + footerPicsRelativePath + "linked-in.png>",
+    "<img src=" + footerPicsRelativePath + "instagram.png>",
+    "<img src=" + footerPicsRelativePath + "twitter.png>"
   ];
 
 mixin footer()
   h2.footer__company-name.company-name
     +company-name()
-  ul.footer__info-block.links-list(footerFirstMenuTitle, footerFirstMenuLinks)
-  ul.footer__info-block.links-list(footerSecondMenuTitle, footerSecondMenuLinks)
-  ul.footer__info-block.links-list_type_social(footerSocialLinksTitle, footerSocialPicsPaths)
-  img.footer__map(src="")
+  .footer__menus
+    .footer__info-block.links-list
+      +links-list(footerFirstMenuTitle, footerFirstMenuLinks)
+    .footer__info-block.links-list
+      +links-list(footerSecondMenuTitle, footerSecondMenuLinks)
+    .footer__info-block.links-list.links-list_type_social
+      +links-list(footerSocialLinksTitle, footerSocialPicsPaths)
+    img.footer__map(src=footerPicsRelativePath + "google-maps.png")
   block

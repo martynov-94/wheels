@@ -1,0 +1,6 @@
+mixin links-list(title, items)
+    h3.links-list__title= title
+    ul.links-list__list
+        each item in items
+            li.links-list__item!= item
+    block

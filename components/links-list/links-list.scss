@@ -1,0 +1,39 @@
+.links-list {
+    font-size: 1.125rem;
+    font-family: "Raleway", sans-serif;
+    color: #ededed;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+
+    &:not(:last-of-type) {
+        margin-right: 5vw;
+    }
+
+    &_type_social {
+        .links-list__list {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        .links-list__item:not(:last-of-type) {
+            margin-bottom: 0;
+            margin-right: 1vw;            
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.60em;
+
+        font-weight: bold;
+    }
+
+    &__item {
+        font-weight: normal;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-bottom: 0.9em;
+    }
+}
