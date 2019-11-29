@@ -100,7 +100,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 15vw;
+  padding: 0 15vw 90px;
   background-color: #1e1e1e; }
   .footer__company-name {
     margin-top: 1.8em;
